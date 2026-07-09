@@ -208,7 +208,7 @@ export const pages = {
     visualTitle: "A PEO partner built around everyday employer needs.",
     visualText:
       "WHR brings administrative structure, compliance awareness, benefits coordination, payroll support, and practical HR guidance into one relationship so owners can make cleaner decisions with less noise.",
-    visualImage: "/images/whrBuilding.png",
+    visualImage: "whrBuilding.png",
     visualAlt: "W.H.R. Associates office building",
     closingTitle: "What makes W.H.R. Associates different?",
     closing:
@@ -227,7 +227,7 @@ export const pages = {
     visualTitle: "Service that feels organized, personal, and steady.",
     visualText:
       "The WHR service model pairs refined HR systems with responsive guidance, helping businesses move through recurring employer obligations with more confidence and less administrative drag.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Professional using a laptop for business support",
     closingTitle: "Comprehensive HR Support",
     closing:
@@ -238,7 +238,7 @@ export const pages = {
     title: "Human Resource solutions built around your business.",
     intro:
       "W.H.R. Associates supports companies with HR processes, employee relations, benefits administration, compliance needs, and workplace structure.",
-    theme: "white",
+    theme: "abstract",
     cards: [
       { title: "Tailored HR Solutions", text: "Flexible HR support based on your company’s structure and growth stage." },
       { title: "Seamless Integration", text: "Processes designed to support your operations without disrupting daily business." },
@@ -250,7 +250,7 @@ export const pages = {
     visualTitle: "Human guidance backed by dependable process.",
     visualText:
       "WHR helps turn HR from a reactive chore into a clearer operating system, supporting policy, onboarding, employee questions, and recurring administration with a human-first approach.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Business professional working on HR tasks",
     closingTitle: "Your HR partner",
     closing:
@@ -271,7 +271,7 @@ export const pages = {
     visualTitle: "Cleaner payroll rhythm for busy teams.",
     visualText:
       "WHR supports the recurring details that make payroll dependable: organized records, consistent workflows, responsive communication, and awareness of employer requirements.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Laptop used for payroll administration",
     closingTitle: "Cleaner payroll support",
     closing:
@@ -282,7 +282,7 @@ export const pages = {
     title: "Employee benefits that support hiring and retention.",
     intro:
       "WHR helps employers manage benefit programs so they can offer stronger employee experiences while keeping administration organized.",
-    theme: "gold",
+    theme: "cover",
     cards: [
       { title: "Full-Service Benefits Administration", text: "Support for health, dental, vision, retirement, and other benefit programs." },
       { title: "Expert Support", text: "Guidance around benefits strategy, trends, and administration." },
@@ -294,7 +294,7 @@ export const pages = {
     visualTitle: "Benefits support with the employee experience in view.",
     visualText:
       "From plan coordination to employee communication, WHR helps benefits feel more approachable for teams and more manageable for employers.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Professional reviewing employee benefit information",
     closingTitle: "Benefits beyond the workplace",
     closing:
@@ -315,7 +315,7 @@ export const pages = {
     visualTitle: "Practical controls for the moments that matter.",
     visualText:
       "WHR helps businesses strengthen the daily practices that reduce risk, from documentation and policy support to safety awareness and compliance-minded decision making.",
-    visualImage: "/images/safetyWarehouse.jpg",
+    visualImage: "safetyWarehouse.jpg",
     visualAlt: "Warehouse worker using safety support",
     closingTitle: "Protect the business",
     closing:
@@ -326,7 +326,7 @@ export const pages = {
     title: "Workers’ compensation support for safer workplaces.",
     intro:
       "WHR helps employers manage workers’ compensation responsibilities, claims support, and safety-centered administration.",
-    theme: "abstract",
+    theme: "gold",
     cards: [
       { title: "Workers’ Compensation Administration", text: "Support around documentation, employer responsibilities, and process coordination." },
       { title: "Claims Processing Support", text: "Help manage claims-related workflows and communication." },
@@ -336,7 +336,7 @@ export const pages = {
     visualTitle: "Safer work environments start with organized support.",
     visualText:
       "WHR connects workers’ compensation administration with safety-minded guidance, helping employers respond clearly and build stronger prevention habits.",
-    visualImage: "/images/safetyWarehouse.jpg",
+    visualImage: "safetyWarehouse.jpg",
     visualAlt: "Warehouse safety and workers compensation support",
     closingTitle: "Safer, more organized operations",
     closing:
@@ -347,7 +347,7 @@ export const pages = {
     title: "Brochures, FAQs, videos, blogs, events, and news.",
     intro:
       "WHR’s resource area gives businesses a place to learn about PEO services, HR, payroll, compliance, staffing, and employee benefits.",
-    theme: "white",
+    theme: "cover",
     cards: [
       { title: "Brochures & Sell Sheets", text: "Concise service overviews for employers comparing HR, payroll, benefits, and risk support." },
       { title: "FAQs", text: "Straightforward answers to common PEO, staffing, compliance, and employee benefit questions." },
@@ -358,7 +358,7 @@ export const pages = {
     visualTitle: "A resource center for clearer employer decisions.",
     visualText:
       "The Resources page is structured as a polished knowledge hub, giving visitors clear paths into WHR service information, educational content, and company updates.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Professional browsing business resources on a laptop",
     closingTitle: "Helpful information in one place",
     closing:
@@ -369,7 +369,7 @@ export const pages = {
     title: "PEO conversations for business owners.",
     intro:
       "The podcast section highlights conversations about WHR Associates PEO, switching providers, employer support, and HR questions.",
-    theme: "cover",
+    theme: "abstract",
     cards: [
       { title: "Provider Conversations", text: "Topics for businesses evaluating PEO providers." },
       { title: "HR Questions", text: "Helpful answers about payroll, benefits, compliance, and workforce support." },
@@ -378,7 +378,7 @@ export const pages = {
     visualTitle: "Audio guidance with a practical employer lens.",
     visualText:
       "Podcast content gives WHR a polished place to share approachable conversations on payroll, benefits, compliance, staffing, and everyday employer decisions.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Laptop used for WHR podcast resources",
     closingTitle: "Audio resource hub",
     closing:
@@ -389,7 +389,7 @@ export const pages = {
     title: "Forms and intake documents.",
     intro:
       "This page organizes employer intake, staffing requests, employee documents, and other WHR form pathways.",
-    theme: "gold",
+    theme: "abstract",
     cards: [
       { title: "Employer Intake", text: "Forms for new employer inquiries and onboarding." },
       { title: "Staffing Requests", text: "Forms for employers looking for staffing support." },
@@ -398,7 +398,7 @@ export const pages = {
     visualTitle: "A cleaner document path for employers and teams.",
     visualText:
       "The Forms page gives visitors a refined, easy-to-scan entry point for common WHR document needs, from new employer inquiries to staffing and employee paperwork.",
-    visualImage: "/images/usingLaptop.jpg",
+    visualImage: "usingLaptop.jpg",
     visualAlt: "Professional reviewing business forms on a laptop",
     closingTitle: "A better document flow",
     closing:

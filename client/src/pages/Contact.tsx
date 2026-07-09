@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { contactInfo } from "../data/siteContent";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { imagePath } from "../utils/imagePath";
 
 function Contact() {
   useScrollReveal();
@@ -57,7 +58,7 @@ function Contact() {
       <section className="contact-hero section-line">
         <div>
           <div className="page-hero-brand">
-            <img src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+            <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
             <span>Contact WHR</span>
           </div>
 

@@ -8,7 +8,7 @@ import {
   peoTasks,
   serviceCards
 } from "../data/siteContent";
-const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
+import { imagePath } from "../utils/imagePath";
 
 function Home() {
   useScrollReveal();

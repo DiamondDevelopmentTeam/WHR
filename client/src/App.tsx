@@ -1,19 +1,31 @@
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { contactInfo, navItems, pages, staffingPage } from "./data/siteContent";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import ContentPage from "./pages/ContentPage";
 import Staffing from "./pages/Staffing";
 import Contact from "./pages/Contact";
+import { imagePath, imageUrl } from "./utils/imagePath";
 
-const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
+type ImageVariables = CSSProperties & Record<`--image-${string}`, string>;
+
+const imageVariables: ImageVariables = {
+  "--image-white-marble": imageUrl("whiteMarbleBackground.jpg"),
+  "--image-gold-marble": imageUrl("marbleBackgroundGold.jpg"),
+  "--image-golden-abstract": imageUrl("goldenAbstractPainting.jpg"),
+  "--image-gold-cover": imageUrl("goldAbstractPaintingCover.jpg"),
+  "--image-laptop": imageUrl("usingLaptop.jpg")
+};
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="site-shell">
+    <div className="site-shell" style={imageVariables}>
+      <ScrollToTop />
+
       <header className="site-header">
         <Link className="brand" to="/" onClick={() => setMenuOpen(false)}>
           <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />

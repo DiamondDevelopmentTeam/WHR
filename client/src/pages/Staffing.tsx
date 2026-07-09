@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { imagePath } from "../utils/imagePath";
 
 type StaffingCard = {
   title: string;
@@ -32,7 +33,7 @@ function Staffing({ page }: { page: StaffingPageContent }) {
       <section className="page-hero staffing-hero section-line">
         <div>
           <div className="page-hero-brand">
-            <img src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+            <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
             <span>Staffing Division</span>
           </div>
 
@@ -54,7 +55,7 @@ function Staffing({ page }: { page: StaffingPageContent }) {
         </div>
 
         <div className="staffing-image-card">
-          <img src="/images/safetyWarehouse.jpg" alt="Workforce support in a warehouse setting" />
+          <img src={imagePath("safetyWarehouse.jpg")} alt="Workforce support in a warehouse setting" />
         </div>
       </section>
 

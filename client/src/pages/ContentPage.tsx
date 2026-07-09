@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { imagePath } from "../utils/imagePath";
 
 type PageCard = {
   title: string;
@@ -29,7 +30,7 @@ function ContentPage({ page }: { page: PageContent }) {
       <section className={`page-hero page-hero-${page.theme} section-line`}>
         <div>
           <div className="page-hero-brand">
-            <img src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+            <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
             <span>Human Resource, Human Solutions</span>
           </div>
 
@@ -59,7 +60,7 @@ function ContentPage({ page }: { page: PageContent }) {
         </div>
 
         <div className="page-detail-image-card">
-          <img src={page.visualImage} alt={page.visualAlt} />
+          <img src={imagePath(page.visualImage)} alt={page.visualAlt} />
         </div>
       </section>
 
