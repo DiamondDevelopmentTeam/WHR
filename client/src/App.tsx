@@ -7,6 +7,8 @@ import ContentPage from "./pages/ContentPage";
 import Staffing from "./pages/Staffing";
 import Contact from "./pages/Contact";
 
+const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,7 +16,7 @@ function App() {
     <div className="site-shell">
       <header className="site-header">
         <Link className="brand" to="/" onClick={() => setMenuOpen(false)}>
-          <img src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+          <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
         </Link>
 
         <button
@@ -101,13 +103,13 @@ function App() {
         </div>
 
         <div className="footer-brand-center">
-          <img className="footer-main-logo" src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+          <img className="footer-main-logo" src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
 
           <p>Human Resource, Human Solutions</p>
 
           <img
             className="footer-chamber-logo"
-            src="/images/ChamberofCombFooter.png"
+            src={imagePath("ChamberofCombFooter.png")}
             alt="Chamber of Commerce"
           />
         </div>

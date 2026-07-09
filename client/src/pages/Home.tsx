@@ -8,6 +8,7 @@ import {
   peoTasks,
   serviceCards
 } from "../data/siteContent";
+const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
 
 function Home() {
   useScrollReveal();
@@ -18,7 +19,7 @@ function Home() {
         <div className="hero-sheen" />
 
         <div className="hero-inner hero-left-layout">
-          <img className="hero-logo hero-logo-left" src="/images/whrlogo.gif" alt="W.H.R. Associates" />
+          <img className="hero-logo hero-logo-left" src={imagePath("whrlogo.gif")} alt="W.H.R. Associates" />
 
           <p className="hero-kicker">Human Resource, Human Solutions</p>
 
@@ -102,7 +103,7 @@ function Home() {
           </p>
 
           <div className="partner-photo-card">
-            <img src="/images/safetyWarehouse.jpg" alt="Warehouse safety support" />
+            <img src={imagePath("safetyWarehouse.jpg")} alt="Warehouse safety support" />
           </div>
         </div>
 
@@ -164,7 +165,7 @@ function Home() {
           <div className="experience-image-frame">
             <img
               className="experience-building-image"
-              src="/images/whrBuilding.png"
+              src={imagePath("whrBuilding.png")}
               alt="W.H.R. Associates building"
             />
           </div>

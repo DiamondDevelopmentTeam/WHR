@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
   background:
     linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.66)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -38,7 +38,7 @@ button,
   padding: 16px clamp(28px, 6vw, 110px);
   background:
     linear-gradient(180deg, rgba(247, 234, 179, 0.96) 0%, rgba(225, 194, 111, 0.96) 100%),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
   border-bottom: 1px solid rgba(5, 82, 80, 0.18);
@@ -89,7 +89,7 @@ button,
   border-radius: 24px;
   background:
     linear-gradient(135deg, rgba(255, 248, 223, 0.92), rgba(231, 202, 128, 0.82)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
   box-shadow:
@@ -211,7 +211,7 @@ button,
 .section-white-marble {
   background:
     linear-gradient(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.56)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -219,7 +219,7 @@ button,
 .section-gold-marble {
   background:
     linear-gradient(rgba(255, 252, 239, 0.40), rgba(255, 252, 239, 0.58)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -227,7 +227,7 @@ button,
 .section-abstract-gold {
   background:
     linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.50)),
-    url("/images/goldenAbstractPainting.jpg");
+    url("/WHR/images/goldenAbstractPainting.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -263,7 +263,7 @@ button,
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(255, 246, 220, 0.26), rgba(238, 204, 147, 0.10)),
-    url("/images/goldAbstractPaintingCover.jpg");
+    url("/WHR/images/goldAbstractPaintingCover.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -472,7 +472,7 @@ button,
   padding: clamp(42px, 5vw, 68px);
   background:
     linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.60)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -551,7 +551,7 @@ button,
   position: relative;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    url("/images/usingLaptop.jpg");
+    url("/WHR/images/usingLaptop.jpg");
   background-size: cover;
   background-position: center;
   min-height: 620px;
@@ -1007,7 +1007,7 @@ button,
   color: #005653;
   background:
     linear-gradient(rgba(255, 248, 223, 0.92), rgba(255, 248, 223, 0.82)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
   border: 1px solid rgba(5, 82, 80, 0.16);
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
@@ -1088,7 +1088,7 @@ button,
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.9), rgba(255, 248, 223, 0.24)),
-    url("/images/goldAbstractPaintingCover.jpg");
+    url("/WHR/images/goldAbstractPaintingCover.jpg");
   background-size: cover;
   background-position: center;
   animation: sectionFade 520ms ease both;
@@ -1107,7 +1107,7 @@ button,
 .page-hero-cover {
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.88), rgba(255, 248, 223, 0.22)),
-    url("/images/goldAbstractPaintingCover.jpg");
+    url("/WHR/images/goldAbstractPaintingCover.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1115,7 +1115,7 @@ button,
 .page-hero-gold {
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.9), rgba(255, 248, 223, 0.32)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1123,7 +1123,7 @@ button,
 .page-hero-white {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 248, 223, 0.28)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1131,7 +1131,7 @@ button,
 .page-hero-abstract {
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.9), rgba(255, 248, 223, 0.26)),
-    url("/images/goldenAbstractPainting.jpg");
+    url("/WHR/images/goldenAbstractPainting.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1253,7 +1253,7 @@ button,
 .staffing-hero {
   background:
     linear-gradient(90deg, rgba(239, 224, 167, 0.88), rgba(239, 224, 167, 0.32)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1285,7 +1285,7 @@ button,
   border-radius: 24px;
   background:
     linear-gradient(rgba(255, 248, 223, 0.88), rgba(255, 248, 223, 0.88)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   border: 1px solid rgba(5, 82, 80, 0.12);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
@@ -1298,7 +1298,7 @@ button,
 .core-services-section {
   background:
     linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.92)),
-    url("/images/whiteMarbleBackground.jpg");
+    url("/WHR/images/whiteMarbleBackground.jpg");
   background-size: cover;
 }
 
@@ -1310,7 +1310,7 @@ button,
   align-items: end;
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.9), rgba(255, 248, 223, 0.24)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1327,7 +1327,7 @@ button,
   align-items: center;
   background:
     linear-gradient(90deg, rgba(255, 248, 223, 0.7), rgba(255, 255, 255, 0.58)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1421,7 +1421,7 @@ button,
   color: #101010;
   background:
     linear-gradient(135deg, rgba(255, 248, 223, 0.7), rgba(255, 255, 255, 0.6)),
-    url("/images/marbleBackgroundGold.jpg");
+    url("/WHR/images/marbleBackgroundGold.jpg");
   background-size: cover;
   background-position: center;
   border-top: 8px solid #005653;
