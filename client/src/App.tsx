@@ -21,12 +21,14 @@ function App() {
           className="menu-button"
           type="button"
           aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          aria-controls="main-navigation"
           onClick={() => setMenuOpen((current) => !current)}
         >
           {menuOpen ? <X size={42} /> : <Menu size={42} />}
         </button>
 
-        <nav className={menuOpen ? "main-nav main-nav-open" : "main-nav"}>
+        <nav id="main-navigation" className={menuOpen ? "main-nav main-nav-open" : "main-nav"}>
           {navItems.map((item) => (
             <div className="nav-item" key={item.label}>
               <NavLink
@@ -41,7 +43,12 @@ function App() {
               {item.children && (
                 <div className="nav-dropdown">
                   {item.children.map((child) => (
-                    <NavLink key={child.label} to={child.path} onClick={() => setMenuOpen(false)}>
+                    <NavLink
+                      key={child.label}
+                      to={child.path}
+                      onClick={() => setMenuOpen(false)}
+                      className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
                       {child.label}
                     </NavLink>
                   ))}
@@ -71,17 +78,20 @@ function App() {
       </Routes>
 
       <footer className="site-footer">
-        <div className="footer-link-stack">
+        <div className="footer-link-stack footer-column">
+          <h3>Home</h3>
           <Link to="/">Home</Link>
           <Link to="/solutions">Solutions</Link>
           <Link to="/podcast">Podcast</Link>
           <Link to="/forms">Forms</Link>
           <Link to="/staffing-division">Staffing Division</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/resources">Privacy Policy</Link>
+          <a href="https://www.whrassociates.com/privacy-policy/" target="_blank" rel="noreferrer">
+            Privacy Policy
+          </a>
         </div>
 
-        <div className="footer-link-stack">
+        <div className="footer-link-stack footer-column">
           <h3>Services</h3>
           <Link to="/services/human-resources">Human Resources</Link>
           <Link to="/services/payroll-administration">Payroll Administration</Link>
@@ -91,18 +101,18 @@ function App() {
         </div>
 
         <div className="footer-brand-center">
+          <img className="footer-main-logo" src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+
+          <p>Human Resource, Human Solutions</p>
+
           <img
             className="footer-chamber-logo"
             src="/images/ChamberofCombFooter.png"
             alt="Chamber of Commerce"
           />
-
-          <img className="footer-main-logo" src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
-
-          <p>Human Resource, Human Solutions</p>
         </div>
 
-        <div className="footer-link-stack">
+        <div className="footer-link-stack footer-column">
           <h3>Resources</h3>
           <Link to="/resources">Brochures & Sell Sheets</Link>
           <Link to="/resources">FAQs</Link>
@@ -126,9 +136,30 @@ function App() {
           ))}
 
           <div className="footer-socials">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">◎</a>
-            <a href="#" aria-label="LinkedIn">in</a>
+            <a
+              href="https://www.facebook.com/people/WHR-Associates/100087834547877/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FB
+            </a>
+            <a
+              href="https://www.instagram.com/whr_associates/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              IG
+            </a>
+            <a
+              href="https://www.linkedin.com/company/89790868/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              IN
+            </a>
           </div>
         </div>
 

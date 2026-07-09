@@ -1,8 +1,11 @@
 import { useState, type FormEvent } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { contactInfo } from "../data/siteContent";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 function Contact() {
+  useScrollReveal();
+
   const [status, setStatus] = useState("");
 
   const [formState, setFormState] = useState({
@@ -51,13 +54,30 @@ function Contact() {
 
   return (
     <main>
-      <section className="contact-page">
-        <div className="contact-copy">
+      <section className="contact-hero section-line">
+        <div>
+          <div className="page-hero-brand">
+            <img src="/images/whrlogo.gif" alt="W.H.R. Associates logo" />
+            <span>Contact WHR</span>
+          </div>
+
           <p className="section-kicker">Contact</p>
-          <h1>Contact W.H.R. Associates</h1>
+          <h1>Start a conversation with W.H.R. Associates.</h1>
           <p>
-            Send a message about PEO services, staffing, payroll, human resources,
-            employee benefits, risk mitigation, or workers’ compensation.
+            Talk with WHR about PEO services, staffing, payroll, human resources,
+            employee benefits, risk mitigation, or workers’ compensation support.
+          </p>
+        </div>
+      </section>
+
+      <section className="contact-page section-gold-marble section-line scroll-reveal">
+        <div className="contact-copy">
+          <p className="section-kicker">Ocala, Florida</p>
+          <h2>Professional support, clear next steps.</h2>
+          <p>
+            Send a note and the WHR team can point you toward the right service path,
+            whether your business needs full PEO support, targeted HR help, staffing
+            guidance, or a cleaner payroll and benefits process.
           </p>
 
           <div className="contact-info-card">
@@ -81,18 +101,20 @@ function Contact() {
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
-          <label>
+          <label htmlFor="contact-name">
             Name
             <input
+              id="contact-name"
               value={formState.name}
               onChange={(event) => setFormState({ ...formState, name: event.target.value })}
               required
             />
           </label>
 
-          <label>
+          <label htmlFor="contact-email">
             Email
             <input
+              id="contact-email"
               type="email"
               value={formState.email}
               onChange={(event) => setFormState({ ...formState, email: event.target.value })}
@@ -100,25 +122,28 @@ function Contact() {
             />
           </label>
 
-          <label>
+          <label htmlFor="contact-company">
             Company
             <input
+              id="contact-company"
               value={formState.company}
               onChange={(event) => setFormState({ ...formState, company: event.target.value })}
             />
           </label>
 
-          <label>
+          <label htmlFor="contact-phone">
             Phone
             <input
+              id="contact-phone"
               value={formState.phone}
               onChange={(event) => setFormState({ ...formState, phone: event.target.value })}
             />
           </label>
 
-          <label>
+          <label htmlFor="contact-interest">
             Interest
             <select
+              id="contact-interest"
               value={formState.interest}
               onChange={(event) => setFormState({ ...formState, interest: event.target.value })}
             >
@@ -133,9 +158,10 @@ function Contact() {
             </select>
           </label>
 
-          <label className="full-width">
+          <label className="full-width" htmlFor="contact-message">
             Message
             <textarea
+              id="contact-message"
               value={formState.message}
               onChange={(event) => setFormState({ ...formState, message: event.target.value })}
               required
@@ -146,7 +172,11 @@ function Contact() {
             Send Message
           </button>
 
-          {status && <p className="form-status full-width">{status}</p>}
+          {status && (
+            <p className="form-status full-width" aria-live="polite">
+              {status}
+            </p>
+          )}
         </form>
       </section>
     </main>
