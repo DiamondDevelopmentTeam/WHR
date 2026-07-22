@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W.H.R. Associates</title>
+    <script>
+      (function () {
+        var base = "/WHR/";
+        var path = window.location.pathname.indexOf(base) === 0
+          ? window.location.pathname.slice(base.length - 1)
+          : window.location.pathname;
+        window.location.replace(base + "?spa=" + encodeURIComponent(path + window.location.search + window.location.hash));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

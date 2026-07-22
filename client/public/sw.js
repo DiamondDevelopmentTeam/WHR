@@ -1,4 +1,4 @@
-const CACHE_VERSION = "whr-cache-v1.0.0";
+const CACHE_VERSION = "whr-cache-v2.0.0";
 
 const APP_SHELL_CACHE = `${CACHE_VERSION}-app-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
@@ -11,14 +11,14 @@ const BASE_URL = self.registration.scope;
 const PRECACHE_URLS = [
   "",
   "images/ChamberofCombFooter.png",
-  "images/goldAbstractPaintingCover.jpg",
-  "images/goldenAbstractPainting.jpg",
-  "images/marbleBackgroundGold.jpg",
+  "images/gold-brush-texture.webp",
+  "images/gold-stone-texture.webp",
   "images/safetyWarehouse.jpg",
+  "images/soft-gold-marble-texture.webp",
   "images/usingLaptop.jpg",
-  "images/whiteMarbleBackground.jpg",
-  "images/whrBuilding.png",
-  "images/whrlogo.gif"
+  "images/whr-building.webp",
+  "images/whr-logo.png",
+  "images/white-marble-texture.webp"
 ].map((path) => new URL(path, BASE_URL).toString());
 
 self.addEventListener("install", (event) => {

@@ -1,14 +1,11 @@
 import {
-  BadgeCheck,
   BookOpenText,
   BriefcaseBusiness,
-  Building2,
   CalendarDays,
   ClipboardCheck,
   FileText,
   HeartPulse,
   PlayCircle,
-  Scale,
   ShieldCheck,
   Users
 } from "lucide-react";
@@ -69,48 +66,6 @@ export const peoTasks = [
     title: "Workers Compensation",
     icon: BriefcaseBusiness,
     text: "Workers’ compensation administration, claims support, safety guidance, and workplace risk coordination."
-  }
-];
-
-export const partnerHighlights = [
-  {
-    title: "Tailored to Empower Your Business",
-    icon: Building2
-  },
-  {
-    title: "Benefits That Extend Beyond the Workplace",
-    icon: HeartPulse
-  },
-  {
-    title: "Tech-Driven, Human-Centric",
-    icon: Scale
-  },
-  {
-    title: "Join Forces with W.H.R Associates PEO",
-    icon: BadgeCheck
-  },
-  {
-    title: "Revolutionize Your HR With Comprehensive Support",
-    icon: ShieldCheck
-  }
-];
-
-export const keyFeatures = [
-  {
-    title: "Tailored HR Solutions",
-    text: "Flexible HR support designed to align with your business objectives and scale with company growth."
-  },
-  {
-    title: "Advanced Technology at Your Fingertips",
-    text: "Technology-supported HR processes that help simplify daily tasks, reporting, compliance, and administration."
-  },
-  {
-    title: "Comprehensive Benefits Access",
-    text: "Support that helps small and mid-sized businesses offer competitive benefit packages."
-  },
-  {
-    title: "Expertise That Drives Success",
-    text: "Guidance from HR professionals with knowledge of compliance, payroll, employee training, and HR management."
   }
 ];
 
@@ -208,7 +163,7 @@ export const pages = {
     visualTitle: "A PEO partner built around everyday employer needs.",
     visualText:
       "WHR brings administrative structure, compliance awareness, benefits coordination, payroll support, and practical HR guidance into one relationship so owners can make cleaner decisions with less noise.",
-    visualImage: "whrBuilding.png",
+    visualImage: "whr-building.webp",
     visualAlt: "W.H.R. Associates office building",
     closingTitle: "What makes W.H.R. Associates different?",
     closing:
@@ -222,7 +177,8 @@ export const pages = {
     theme: "gold",
     cards: serviceCards.map((item) => ({
       title: item.title,
-      text: item.text
+      text: item.text,
+      path: item.path
     })),
     visualTitle: "Service that feels organized, personal, and steady.",
     visualText:

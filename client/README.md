@@ -1,32 +1,23 @@
-# React + TypeScript + Vite
+# W.H.R. Associates website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The client application for the W.H.R. Associates PEO and staffing website.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+From the repository root:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+npm install
+npm run dev --workspace client
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The contact form reads `VITE_CONTACT_ENDPOINT` when a hosted API endpoint is configured and otherwise uses `/api/contact`.
+
+## Quality checks
+
+```sh
+npm run lint --workspace client
+npm run build
+```
+
+The production client is generated in `client/dist`. The GitHub Pages workflow publishes that directory at the `/WHR/` repository path and uses `public/404.html` as the client-side route fallback.

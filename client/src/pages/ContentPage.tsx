@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { imagePath } from "../utils/imagePath";
 
-type PageCard = {
-  title: string;
-  text: string;
-};
+type PageCard = { title: string; text: string; path?: string };
 
 type PageContent = {
   eyebrow: string;
@@ -27,53 +24,67 @@ function ContentPage({ page }: { page: PageContent }) {
 
   return (
     <main>
-      <section className={`page-hero page-hero-${page.theme} section-line`}>
-        <div>
-          <div className="page-hero-brand">
-            <img src={imagePath("whrlogo.gif")} alt="W.H.R. Associates logo" />
-            <span>Human Resource, Human Solutions</span>
-          </div>
-
-          <p className="section-kicker">{page.eyebrow}</p>
+      <section className={`inner-hero inner-hero-${page.theme}`}>
+        <div className="inner-hero-copy">
+          <p className="eyebrow">{page.eyebrow}</p>
           <h1>{page.title}</h1>
           <p>{page.intro}</p>
+          <Link className="button button-primary" to="/contact">
+            Talk with WHR <ArrowRight size={17} aria-hidden="true" />
+          </Link>
+        </div>
+        <div className="inner-hero-rule" aria-hidden="true"><span /></div>
+      </section>
+
+      <section className="capability-section scroll-reveal">
+        <div className="capability-heading">
+          <p className="eyebrow">What this support includes</p>
+          <h2>Focused help for the details that keep a business moving.</h2>
+        </div>
+        <div className="capability-list">
+          {page.cards.map((card, index) => {
+            const content = (
+              <>
+                <span className="capability-number">{String(index + 1).padStart(2, "0")}</span>
+                <span className="capability-copy">
+                  <strong>{card.title}</strong>
+                  <span>{card.text}</span>
+                </span>
+                {card.path && <ArrowRight size={19} aria-hidden="true" />}
+              </>
+            );
+
+            return card.path ? (
+              <Link className="capability-item" to={card.path} key={card.title}>{content}</Link>
+            ) : (
+              <article className="capability-item" key={card.title}>{content}</article>
+            );
+          })}
         </div>
       </section>
 
-      <section className="page-card-section section-white-marble section-line scroll-reveal">
-        <div className="page-card-grid">
-          {page.cards.map((card, index) => (
-            <article key={card.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h2>{card.title}</h2>
-              <p>{card.text}</p>
-            </article>
-          ))}
+      <section className="detail-feature scroll-reveal">
+        <div className="detail-image">
+          <img src={imagePath(page.visualImage)} alt={page.visualAlt} loading="lazy" width="1360" height="1020" />
         </div>
-      </section>
-
-      <section className="page-detail-section section-gold-marble section-line scroll-reveal">
-        <div className="page-detail-copy">
-          <p className="section-kicker">WHR Advantage</p>
+        <div className="detail-copy">
+          <p className="eyebrow">The WHR advantage</p>
           <h2>{page.visualTitle}</h2>
           <p>{page.visualText}</p>
-        </div>
-
-        <div className="page-detail-image-card">
-          <img src={imagePath(page.visualImage)} alt={page.visualAlt} />
+          <p className="detail-check"><Check size={18} aria-hidden="true" /> Clear guidance</p>
+          <p className="detail-check"><Check size={18} aria-hidden="true" /> Coordinated support</p>
+          <p className="detail-check"><Check size={18} aria-hidden="true" /> Practical next steps</p>
         </div>
       </section>
 
-      <section className="page-closing section-line scroll-reveal">
+      <section className="page-cta scroll-reveal">
         <div>
-          <p className="section-kicker">{page.eyebrow}</p>
+          <p className="eyebrow">{page.eyebrow}</p>
           <h2>{page.closingTitle}</h2>
           <p>{page.closing}</p>
         </div>
-
-        <Link className="dark-button" to="/contact">
-          Contact WHR
-          <ChevronRight size={18} />
+        <Link className="button button-light" to="/contact">
+          Request a consultation <ArrowRight size={17} aria-hidden="true" />
         </Link>
       </section>
     </main>

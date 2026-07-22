@@ -2,9 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/gif" href="%BASE_URL%images/whrlogo.gif" />
+    <link rel="icon" type="image/png" href="%BASE_URL%images/whr-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WHR Associates</title>
+    <meta name="theme-color" content="#0a3d37" />
+    <meta name="description" content="W.H.R. Associates provides PEO support for human resources, payroll, employee benefits, risk mitigation, workers’ compensation, and staffing." />
+    <meta property="og:title" content="W.H.R. Associates | Human Resources. Human Solutions." />
+    <meta property="og:description" content="Practical PEO and workforce support for employers navigating HR, payroll, benefits, risk, and workers’ compensation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%BASE_URL%images/whr-building.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>W.H.R. Associates | Human Resources. Human Solutions.</title>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var route = params.get("spa");
+        if (route) {
+          window.history.replaceState(null, "", "%BASE_URL%" + route.replace(/^\//, ""));
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
